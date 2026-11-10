@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creature garden</title>
+    <link rel="stylesheet" href="dis06.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="dis06.js" defer></script>
+</head>
+<body>
+    <label for="item-label">Creature's name</label>
+    <div class="controls">
+        <input id="item-label" type="text" autocomplete="off">
+        <button id="add-button" type="button">Let it roam</button>
+    </div>
+
+    <div>
+        <label for="object-color">Color</label>
+        <input id="object-color" type="color" value="#d9d9d3">
+    </div>
+
+    <!-- TODO 3: add a size picker here. Copy this in:
+    <div>
+        <label for="creature-size">Size</label>
+        <select id="creature-size">
+            <option value="16px">small</option>
+            <option value="24px">medium</option>
+            <option value="36px">large</option>
+        </select>
+    </div>
+    --> <div>
+    <label for="creature-size">Size</label>
+    <select id="creature-size">
+        <option value="16px">small</option>
+        <option value="24px">medium</option>
+        <option value="36px">large</option>
+    </select>
+</div>
+
+    <p id="message" aria-live="polite"></p>
+
+    <!-- TODO 1: the counter will show up here -->
+    <p id="count"></p>
+
+    <ul id="items" aria-live="polite"></ul>
+</body>
+</html>
